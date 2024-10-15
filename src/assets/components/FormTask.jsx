@@ -1,8 +1,15 @@
 import React from 'react'
-import { Task } from './Task'
 
-export const FormTask = () => {
+export const FormTask = ({ algo }) => {
   return (
-    <div>FormTask</div>
+    <div>
+        <label htmlFor="add_task">Add new task: </label>
+        <input type="text" id="add_task" />
+        <button
+            onClick={() => {
+                console.log("Add task")
+            }}>Add task
+        </button>
+    </div>
   )
 }
